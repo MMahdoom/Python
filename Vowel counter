@@ -1,0 +1,17 @@
+def vowel_count():
+    sentence = str(input("Please input a sentence: "))
+    split_sentence = sentence.split()
+    
+    letters = []
+    vowels_list = ['a','e','i','o','u']
+    vowels = 0
+    for words in split_sentence:
+        letters += list(words.lower())
+        
+    for letter in letters:
+        if letter in vowels_list:
+            vowels += 1
+        else:
+            continue
+            
+    return vowels
